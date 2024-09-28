@@ -1,0 +1,47 @@
+.mainLeftSidebarContainer {
+  width: 17%;
+  min-height: 100vh;
+  border-right: 1px solid #e0dfdf;
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+
+    .userSection {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 1rem;
+      .avatar {
+        width: 2rem;
+        border-radius: 100%;
+      }
+      .username {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.mainLeftSidebarContainerdark {
+  width: 17%;
+  min-height: 100vh;
+  border-right: 1px solid #505050;
+  .sidebar {
+    width: 250px;
+    padding: 20px;
+
+    .userSection {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      gap: 1rem;
+      .avatar {
+        width: 2rem;
+        border-radius: 100%;
+      }
+      .username {
+        font-weight: bold;
+      }
+    }
+  }
+}

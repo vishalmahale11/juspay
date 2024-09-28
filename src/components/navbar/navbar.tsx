@@ -8,7 +8,13 @@ const Navbar: React.FC = () => {
   const { theme } = useTheme();
 
   return (
-    <div className={styles.navbarMainContainer}>
+    <div
+      className={
+        theme === "dark"
+          ? styles.navbarMainContainerdark
+          : styles.navbarMainContainer
+      }
+    >
       <div className={styles.leftSideContainer}>
         <div className={styles.iconContainer}>
           <Notebook size={20} />
