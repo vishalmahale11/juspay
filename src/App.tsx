@@ -1,10 +1,9 @@
-import "./App.css";
-import { ModeToggle } from "./components/mode-toggle";
+import Navbar from "./components/navbar/navbar";
 
 function App() {
   return (
     <div>
-      <ModeToggle />
+      <Navbar />
     </div>
   );
 }
