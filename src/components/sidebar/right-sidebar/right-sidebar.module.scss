@@ -2,10 +2,150 @@
   width: 20%;
   border-left: 1px solid #e0dfdf;
   min-height: 100vh;
+  padding: 1rem;
+  .notiname {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .notificationmap {
+    display: flex;
+    flex-direction: column;
+    .mapDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 5%;
+      .iconDiv {
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .contentofmap {
+        .message {
+          p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .activityContainer {
+    margin-top: 10%;
+    .actiname {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .activitymap {
+      display: flex;
+      flex-direction: column;
+      .mapDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5%;
+        .iconDiv {
+          padding: 4px;
+          border-radius: 10px;
+        }
+        .dashDiv {
+          height: 15px;
+          border: 1px solid #c7bfbf;
+          width: 1px;
+          margin-left: 50%;
+          margin-top: 10%;
+        }
+        .contentofmap {
+          .message {
+            p {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .mainRightSidebarContainerdark {
   width: 20%;
   min-height: 100vh;
   border-left: 1px solid #505050;
+  padding: 1rem;
+  .notiname {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .notificationmap {
+    display: flex;
+    flex-direction: column;
+    .mapDiv {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 5%;
+      .iconDiv {
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .contentofmap {
+        .message {
+          p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .activityContainer {
+    margin-top: 10%;
+    .actiname {
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .activitymap {
+      display: flex;
+      flex-direction: column;
+      .mapDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5%;
+        .iconDiv {
+          padding: 4px;
+          border-radius: 10px;
+        }
+        .dashDiv {
+          height: 15px;
+          border: 1px solid #c7bfbf;
+          width: 1px;
+          margin-left: 50%;
+          margin-top: 10%;
+        }
+        .contentofmap {
+          .message {
+            p {
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

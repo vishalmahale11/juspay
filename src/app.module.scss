@@ -1,4 +1,7 @@
 .appContainer {
   display: flex;
   justify-content: center;
+  .middleContent {
+    width: 75%;
+  }
 }
