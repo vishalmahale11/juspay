@@ -63,11 +63,11 @@
         outline: none;
         background: transparent;
         font-size: 14px;
-        color: #474747;
+        color: #282828;
         width: 100%;
 
         &::placeholder {
-          color: #474747;
+          color: #282828;
         }
       }
 
@@ -94,7 +94,6 @@
 .navbarMainContainerdark {
   border-bottom: 1px solid #505050;
   padding: 1rem;
-  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
