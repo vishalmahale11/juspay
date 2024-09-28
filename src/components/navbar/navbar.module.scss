@@ -1,10 +1,105 @@
 .navbarMainContainer {
   border-bottom: 1px solid #e0dfdf;
   padding: 1rem;
-  width: 60%;
+  width: 75%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 4rem;
+  .leftSideContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .iconContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+    .namContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .rightSideContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    .searchBar {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      border: none;
+      width: 200px;
+      position: relative;
+
+      // Search icon
+      .inputIcon {
+        margin-right: 8px;
+        color: #b0b0b0;
+      }
+
+      // Search input
+      .inputBox {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        color: #9a9a9a;
+        width: 100%;
+
+        &::placeholder {
+          color: #b0b0b0;
+        }
+      }
+
+      .darkInputBox {
+        border: none;
+        outline: none;
+        background: transparent;
+        font-size: 14px;
+        color: #474747;
+        width: 100%;
+
+        &::placeholder {
+          color: #474747;
+        }
+      }
+
+      .shortcut {
+        position: absolute;
+        right: 10px;
+        color: #b0b0b0;
+        font-size: 12px;
+      }
+    }
+    .buttonKeys {
+      display: flex;
+      gap: 1rem;
+      .iconHistory {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+.navbarMainContainerdark {
+  border-bottom: 1px solid #505050;
+  padding: 1rem;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
   .leftSideContainer {
     display: flex;
     align-items: center;

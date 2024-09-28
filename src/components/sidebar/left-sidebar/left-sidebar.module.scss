@@ -1,0 +1,250 @@
+.mainLeftSidebarContainer {
+  width: 17%;
+  min-height: 100vh;
+  border-right: 1px solid #e0dfdf;
+  .sidebar {
+    margin-left: 10%;
+    margin-top: 10%;
+
+    .userSection {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .avatar {
+        width: 2rem;
+        border-radius: 100%;
+      }
+      .username {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .sidebarContent {
+    margin-top: 10%;
+    .favorites {
+      .Favnames {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .favorites {
+          color: gray;
+          padding: 2px 13px 4px 14px;
+          &:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 2px 13px 4px 14px;
+            border-radius: 9px;
+          }
+        }
+        .recently {
+          color: gray;
+          padding: 2px 13px 4px 14px;
+          &:hover {
+            background-color: #f1f1f1;
+            cursor: pointer;
+            padding: 2px 13px 4px 14px;
+            border-radius: 9px;
+          }
+        }
+      }
+      .overviewdiv {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+        margin-top: 3%;
+        .overview {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+    }
+    .dashBoarddiv {
+      margin-top: 10%;
+      .dashBoardName {
+        margin-left: 10%;
+      }
+      .dasboardContent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 14%;
+        .defaultsContent {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 10%;
+          cursor: pointer;
+          padding: 2px;
+          &:hover {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 10%;
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 2px;
+            border-radius: 10px;
+            border-left: solid;
+          }
+        }
+      }
+    }
+    .pagesdiv {
+      margin-left: 14%;
+      margin-top: 10%;
+      .pagesContent {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 10%;
+        cursor: pointer;
+        padding: 2px;
+        &:hover {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 10%;
+          cursor: pointer;
+          background-color: #f1f1f1;
+          padding: 2px;
+          border-radius: 10px;
+          border-left: solid;
+        }
+      }
+      .useProfiles {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 33%;
+        margin-top: 10%;
+      }
+    }
+  }
+}
+
+.mainLeftSidebarContainerdark {
+  width: 17%;
+  min-height: 100vh;
+  border-right: 1px solid #505050;
+  .sidebar {
+    margin-left: 10%;
+    margin-top: 10%;
+
+    .userSection {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .avatar {
+        width: 2rem;
+        border-radius: 100%;
+      }
+      .username {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .sidebarContent {
+    margin-top: 10%;
+    .favorites {
+      .Favnames {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .favorites {
+          color: gray;
+          padding: 2px 13px 4px 14px;
+          &:hover {
+            background-color: #474747;
+            cursor: pointer;
+            padding: 2px 13px 4px 14px;
+            border-radius: 9px;
+          }
+        }
+        .recently {
+          color: gray;
+          padding: 2px 13px 4px 14px;
+          &:hover {
+            background-color: #474747;
+            cursor: pointer;
+            padding: 2px 13px 4px 14px;
+            border-radius: 9px;
+          }
+        }
+      }
+    }
+
+    .overviewdiv {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
+      margin-top: 3%;
+      .overview {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+    .dashBoarddiv {
+      margin-top: 10%;
+      .dashBoardName {
+        margin-left: 10%;
+      }
+      .dasboardContent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 14%;
+        .defaultsContent {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 10%;
+          cursor: pointer;
+          padding: 2px;
+          &:hover {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 10%;
+            cursor: pointer;
+            background-color: #474747;
+            padding: 2px;
+            border-radius: 10px;
+            border-left: solid;
+          }
+        }
+      }
+    }
+    .pagesdiv {
+      margin-left: 14%;
+      margin-top: 10%;
+      .pagesContent {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 10%;
+        cursor: pointer;
+        padding: 2px;
+        &:hover {
+          display: flex;
+          gap: 1rem;
+          align-items: center;
+          margin-top: 10%;
+          cursor: pointer;
+          background-color: #474747;
+          padding: 2px;
+          border-radius: 10px;
+          border-left: solid;
+        }
+      }
+    }
+    .useProfiles {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-left: 33%;
+      margin-top: 10%;
+    }
+  }
+}
