@@ -4,4 +4,128 @@
     font-size: 1rem;
     font-weight: 700;
   }
+  .firstSectiondiv {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 5%;
+    .leftSectiondiv {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 1rem;
+      width: 50%;
+      .gridDiv {
+        padding: 1rem;
+        border-radius: 1.4rem;
+        height: 7rem;
+        .gridName {
+          font-size: 1rem;
+          font-weight: 600;
+          color: black;
+        }
+        .gridContent {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 1rem;
+          margin-top: 1rem;
+          .stockPrice {
+            display: flex;
+            gap: 0.5rem;
+            font-size: 1rem;
+            align-items: center;
+            color: black;
+          }
+          &:hover {
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: #ebebeb;
+            cursor: pointer;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+
+    .rightSectionDiv {
+      width: 50%;
+      background-color: #f7f9fb;
+      border-radius: 10px;
+      padding: 1rem;
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: black;
+      }
+    }
+  }
+
+  .secondSectionDiv {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .leftDiv {
+      padding: 1rem;
+      border-radius: 10px;
+      width: 75%;
+      margin-top: 2%;
+      .content {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+    }
+
+    .rightDiv {
+      background-color: #f7f9fb;
+      width: 25%;
+      padding: 1rem;
+      margin-top: 2%;
+      border-radius: 10px;
+
+      .progressBar {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+        .preogressContent {
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .thirdSectionDiv {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2%;
+    .leftDiv {
+      padding: 1rem;
+      border-radius: 10px;
+      width: 75%;
+      background-color: #f7f9fb;
+    }
+    .rightDiv {
+      background-color: #f7f9fb;
+      width: 25%;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+progress {
+  height: 2px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+  background-color: #4c8caf;
+}
+
+progress::-moz-progress-bar {
+  background-color: #4c8caf;
 }
