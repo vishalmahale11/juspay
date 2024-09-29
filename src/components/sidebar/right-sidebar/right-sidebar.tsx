@@ -142,7 +142,6 @@ const RightSidebar: React.FC = () => {
                   >
                     <Avatar>
                       <AvatarImage
-                        style={{ borderRadius: "100%" }}
                         src="https://github.com/shadcn.png"
                         alt="@shadcn"
                       />

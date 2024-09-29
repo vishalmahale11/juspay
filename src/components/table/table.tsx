@@ -1,56 +1,59 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
 
-const invoices = [
+const topSellingProducts = [
   {
-    invoice: "INV001",
-    paymentStatus: "Paid",
-    totalAmount: "$250.00",
-    paymentMethod: "Credit Card",
+    name: "ASOS Ridley High Waist",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
   {
-    invoice: "INV002",
-    paymentStatus: "Pending",
-    totalAmount: "$150.00",
-    paymentMethod: "PayPal",
+    name: "Marco Lightweight Shirt",
+    price: "$250.00",
+    quantity: "37",
+    amount: "$4,754.18",
   },
   {
-    invoice: "INV003",
-    paymentStatus: "Unpaid",
-    totalAmount: "$350.00",
-    paymentMethod: "Bank Transfer",
+    name: "Half Sleeve Shirt",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
   {
-    invoice: "INV004",
-    paymentStatus: "Paid",
-    totalAmount: "$450.00",
-    paymentMethod: "Credit Card",
+    name: "Lightweight Jacket",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
   {
-    invoice: "INV005",
-    paymentStatus: "Paid",
-    totalAmount: "$550.00",
-    paymentMethod: "PayPal",
+    name: "Marco Shoes",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
+  }, {
+    name: "Half Sleeve Shirt",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
   {
-    invoice: "INV006",
-    paymentStatus: "Pending",
-    totalAmount: "$200.00",
-    paymentMethod: "Bank Transfer",
+    name: "Lightweight Jacket",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
   {
-    invoice: "INV007",
-    paymentStatus: "Unpaid",
-    totalAmount: "$300.00",
-    paymentMethod: "Credit Card",
+    name: "Marco Shoes",
+    price: "$250.00",
+    quantity: "82",
+    amount: "$6,518.18",
   },
 ];
 
@@ -59,28 +62,22 @@ export function TableData() {
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead className="w-[100px]">Invoice</TableHead>
-          <TableHead>Status</TableHead>
-          <TableHead>Method</TableHead>
-          <TableHead className="text-right">Amount</TableHead>
+          <TableHead>Name</TableHead>
+          <TableHead>Price</TableHead>
+          <TableHead>Quantity</TableHead>
+          <TableHead>Amount</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
-        {invoices.map((invoice) => (
-          <TableRow key={invoice.invoice}>
-            <TableCell className="font-medium">{invoice.invoice}</TableCell>
-            <TableCell>{invoice.paymentStatus}</TableCell>
-            <TableCell>{invoice.paymentMethod}</TableCell>
-            <TableCell className="text-right">{invoice.totalAmount}</TableCell>
+        {topSellingProducts.map((products) => (
+          <TableRow key={products.name}>
+            <TableCell>{products.name}</TableCell>
+            <TableCell>{products.price}</TableCell>
+            <TableCell>{products.quantity}</TableCell>
+            <TableCell>{products.amount}</TableCell>
           </TableRow>
         ))}
       </TableBody>
-      <TableFooter>
-        <TableRow>
-          <TableCell colSpan={3}>Total</TableCell>
-          <TableCell className="text-right">$2,500.00</TableCell>
-        </TableRow>
-      </TableFooter>
     </Table>
   );
 }

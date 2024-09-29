@@ -3,20 +3,24 @@ import styles from "./dashboard.module.scss";
 import { DARK } from "../constants/constants";
 import { useTheme } from "../theme/theme-provider";
 import { ArrowDownLeft, ArrowUpRight, Dot } from "lucide-react";
-import image1 from "../images/image1.png";
-import image2 from "../images/image2.png";
-import image3 from "../images/image3.png";
-import image4 from "../images/image4.png";
 import image5 from "../images/image5.png";
 import image6 from "../images/image6.png";
 import image7 from "../images/image7.png";
 import image8 from "../images/image8.png";
 import { TableData } from "../table/table";
+import { Component } from "../charts/bar-charts";
+import { LineComponent } from "../charts/line-chart";
 
 const Dashboard: React.FC = () => {
   let { theme } = useTheme();
   return (
-    <div className={styles.dashboardMainContainer}>
+    <div
+      className={
+        theme === DARK
+          ? styles.dashboardMainContaineDark
+          : styles.dashboardMainContainer
+      }
+    >
       <p className={styles.name}>eCommerce</p>
 
       {/* 1st section */}
@@ -60,15 +64,11 @@ const Dashboard: React.FC = () => {
                 style={{
                   fontSize: "1.6rem",
                   fontWeight: "600",
-                  color: theme === DARK ? "#ffff" : "black",
                 }}
               >
                 1,219
               </p>
-              <p
-                style={{ color: theme === DARK ? "#ffff" : "black" }}
-                className={styles.stockPrice}
-              >
+              <p className={styles.stockPrice}>
                 -0.03%
                 <ArrowDownLeft size={10} />
               </p>
@@ -91,15 +91,11 @@ const Dashboard: React.FC = () => {
                 style={{
                   fontSize: "1.6rem",
                   fontWeight: "600",
-                  color: theme === DARK ? "#ffff" : "black",
                 }}
               >
                 $695
               </p>
-              <p
-                style={{ color: theme === DARK ? "#ffff" : "black" }}
-                className={styles.stockPrice}
-              >
+              <p className={styles.stockPrice}>
                 +15.03%
                 <ArrowUpRight size={10} />
               </p>
@@ -134,7 +130,7 @@ const Dashboard: React.FC = () => {
           <p style={{ color: theme === DARK ? "#ffff" : "black" }}>
             Projections vs Actuals
           </p>
-          <img src={theme === DARK ? image2 : image1} alt="img" />
+          <Component />
         </div>
       </div>
 
@@ -156,7 +152,7 @@ const Dashboard: React.FC = () => {
               Previous Week <span>$68,768</span>
             </p>
           </div>
-          <img src={theme === DARK ? image3 : image4} alt="revenue" />
+          <LineComponent />
         </div>
         <div
           style={{ backgroundColor: theme === DARK ? "#282828" : "#f7f9fb" }}
@@ -170,19 +166,30 @@ const Dashboard: React.FC = () => {
           </div>
           <div className={styles.progressBar}>
             <div className={styles.preogressContent}>
-              <p>New York </p>
+              <div className={styles.labelName}>
+                <p>New York </p>
+                <p>72K</p>
+              </div>
               <progress value="70" max="100"></progress>
             </div>
             <div className={styles.preogressContent}>
-              <p>San Fransico</p>
+              <div className={styles.labelName}>
+                <p>San Fransico</p>
+                <p>39K</p>
+              </div>
               <progress value="40" max="100"></progress>
             </div>
             <div className={styles.preogressContent}>
-              <p>Sydney</p>
+              <div className={styles.labelName}>
+                <p>Sydney</p> <p>25K</p>
+              </div>
               <progress value="20" max="100"></progress>
             </div>
             <div className={styles.preogressContent}>
-              <p>Singapore</p>
+              <div className={styles.labelName}>
+                <p>Singapore</p>
+                <p>61K</p>
+              </div>
               <progress value="80" max="100"></progress>
             </div>
           </div>
@@ -205,6 +212,38 @@ const Dashboard: React.FC = () => {
           <p style={{ fontWeight: "500", textAlign: "center" }}>Total Sales</p>
           <div>
             <img src={theme === DARK ? image8 : image7} alt="" />
+          </div>
+          <div className={styles.totalSales}>
+            <div className={styles.totalSalesContent}>
+              <div className={styles.totalSalesLeftSide}>
+                <Dot size={40} color="black" />
+                Direct
+              </div>
+              <p>$300.56</p>
+            </div>
+            <div>
+              <div className={styles.totalSalesContent}>
+                <div className={styles.totalSalesLeftSide}>
+                  <Dot size={40} color="green" />
+                  Affiliate
+                </div>
+                <p>$300.56</p>
+              </div>
+            </div>
+            <div className={styles.totalSalesContent}>
+              <div className={styles.totalSalesLeftSide}>
+                <Dot size={40} color="purple" />
+                Sponsored
+              </div>
+              <p>$300.56</p>
+            </div>
+            <div className={styles.totalSalesContent}>
+              <div className={styles.totalSalesLeftSide}>
+                <Dot size={40} color="skyblue" />
+                Email
+              </div>
+              <p>$300.56</p>
+            </div>
           </div>
         </div>
       </div>
