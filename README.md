@@ -34,6 +34,10 @@ Dashboard of Juspay here we can see the total Customers, Revenue, Orders etc. wi
 - HTML/CSS/SCSS
 - etc.
 
+## Deployed URl
+
+`https://juspaydashboard.netlify.app/`
+
 ## Contributing
 
 If you'd like to contribute to this project, please follow these steps:
