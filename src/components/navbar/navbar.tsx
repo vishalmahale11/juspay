@@ -5,7 +5,7 @@ import { ModeToggle } from "../theme/mode-toggle";
 import { useTheme } from "../theme/theme-provider";
 import { DARK, NAME_COLOR } from "../constants/constants";
 
-const Navbar: React.FC = () => {
+const Navbar = (props: any) => {
   const { theme } = useTheme();
 
   return (
@@ -22,7 +22,13 @@ const Navbar: React.FC = () => {
           <Star size={20} />
         </div>
         <div className={styles.namContainer}>
-          <div style={{ color: NAME_COLOR }}>Dashboard</div>/<div>Default</div>
+          <div style={{ color: NAME_COLOR }}>Dashboard</div>/
+          <div
+            onClick={(e) => props?.handleSwitch(e)}
+            style={{ cursor: "pointer" }}
+          >
+            {props?.switchTab ? "Dashboard" : "Order List"}
+          </div>
         </div>
       </div>
       <div className={styles.rightSideContainer}>
