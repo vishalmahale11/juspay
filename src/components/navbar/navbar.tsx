@@ -1,4 +1,3 @@
-import React from "react";
 import { Bell, History, Notebook, Search, Star } from "lucide-react";
 import styles from "./navbar.module.scss";
 import { ModeToggle } from "../theme/mode-toggle";

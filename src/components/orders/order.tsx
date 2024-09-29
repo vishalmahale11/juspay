@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./order.module.scss";
-import { TableData } from "../table/table";
 import { DataTableDemo } from "../table/order-table";
 
 const Order: React.FC = () => {
